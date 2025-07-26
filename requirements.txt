@@ -8,5 +8,6 @@ langchain-qdrant
 langchain-huggingface
 sentence-transformers
 pdfplumber
-docx
+python-docx
+python-multipart
 requests

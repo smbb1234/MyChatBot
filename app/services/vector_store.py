@@ -68,7 +68,7 @@ class QdrantStore:
         self.qdrant_client.delete_collection(self.collection_name)
 
 if __name__ == "__main__":
-    store = QdrantStore()
+    store = QdrantStore(collection_name="test")
 
     docs = [
         Document(page_content="The Eiffel Tower is in Paris."),
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     ]
     store.add_documents(docs)
 
-    retriever = store.get_retriever()
+    retriever = store.get_retriever(k=2)
     # invoke the retriever with a query
     results = retriever.invoke("Where is the Eiffel Tower?")
 
