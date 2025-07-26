@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+qdrant-client
+langchain
+langchain-community
+langchain-core
+langchain-qdrant
+langchain-huggingface
+sentence-transformers
+pdfplumber
+docx
+requests
